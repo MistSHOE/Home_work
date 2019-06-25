@@ -1,0 +1,4 @@
+print("Hi Pip!");
+print("Welcome Pip!");
+print("Good luck Pip!");
+print("You have lost Pip!");
