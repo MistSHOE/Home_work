@@ -4,26 +4,17 @@
 # Функция должна принимать параметры как именованные аргументы.
 # Реализовать вывод данных о пользователе одной строкой.
 
-name = "Tao"
-data_human = dict(
-    name="Tao",
-    years="20",
-    city="Moscow",
-    email="Tao@mail.ru",
-    phone="8-999-999-99-99")
-
-print(*data_human)
-print(data_human.items())
-print(data_human.values())
-print(data_human.keys())
-print(data_human.get("name"))
+def data_user(name, **information):
+    print(f"Name: {name}")
+    for x, y in information.items():
+        print(f"{x}: {y}")
 
 
-# def information_collection(data_human):
-#     for data in data_human.items():
-#         print(f"{data}")
-#     print()
-#
-#
-# information_collection(data_human)
+data_user("Tao", surname="Bloody", phone="8-999-999-99-99", email="123456789@mail.com", city="Moscow", years="25")
 
+
+def information(name, **data):
+    print(f"Name: {name}, {data}")
+
+
+information("Mistrun", surname="Bloody", phone="8-999-999-99-99",
