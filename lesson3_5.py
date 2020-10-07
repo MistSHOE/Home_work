@@ -6,19 +6,7 @@
 # Если специальный символ введен после нескольких чисел,
 # то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
 
-enter_user = 0
-enter_number = []
+enter_number = input("Enter number by spaces : ")
+print(enter_number)
 
-while True:
-
-    enter_number = input("Enter number by spaces : ").split()
-    print(enter_number)
-    enter_number = list(enter_number)
-
-    if enter_number == ["q"]:
-        print("Yours exit")
-        break
-    else:
-        for x in enter_number:
-            enter_user += int(x)
-            print(f"sum yours numbers: {enter_user}")
+print(sum(enter_number))
